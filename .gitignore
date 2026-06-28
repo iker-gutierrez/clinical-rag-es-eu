@@ -1,0 +1,54 @@
+.venv/
+.vendor/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Large or generated research artifacts
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+experiments/runs/*
+experiments/slurm_logs/*
+models/*
+reports/figures/*
+reports/metrics/*
+
+# Track processed datasets (exclude smoke test subsets)
+!data/processed/sns1064/
+!data/processed/sns1064/**
+!data/processed/casimedicos/
+!data/processed/casimedicos/**
+!data/processed/sns1064_casimedicos/
+!data/processed/sns1064_casimedicos/**
+!data/processed/sns1064_eu/
+!data/processed/sns1064_eu/**
+!data/processed/casimedicos_eu/
+!data/processed/casimedicos_eu/**
+!data/processed/sns1064_casimedicos_eu/
+!data/processed/sns1064_casimedicos_eu/**
+!reports/metrics/es_dev_ablation_results.md
+!reports/metrics/eu_dev_ablation_results.md
+
+# SNS-1064 paper (dataset not included)
+SNS_1064/
+
+# Old prototype
+sns_qa_rag_v1/
+
+# Manuscript (LaTeX source and compiled PDF)
+manuscript/
+
+# Personal notes and exploration files
+becoming_autonomous_with_slurm.py
+codex_history_v2.md
+experiments/codex_history.txt
+
+# Local machine state
+.env
+.cache/
+wandb/
